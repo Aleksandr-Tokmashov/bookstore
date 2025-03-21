@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Little-Lemon-Web-App/static/css/main.22e46ca3.css",
-    "main.js": "/Little-Lemon-Web-App/static/js/main.3be0bedd.js",
-    "index.html": "/Little-Lemon-Web-App/index.html",
-    "main.22e46ca3.css.map": "/Little-Lemon-Web-App/static/css/main.22e46ca3.css.map",
-    "main.3be0bedd.js.map": "/Little-Lemon-Web-App/static/js/main.3be0bedd.js.map"
+    "main.css": "/bookstore/static/css/main.22e46ca3.css",
+    "main.js": "/bookstore/static/js/main.3be0bedd.js",
+    "index.html": "/bookstore/index.html",
+    "main.22e46ca3.css.map": "/bookstore/static/css/main.22e46ca3.css.map",
+    "main.3be0bedd.js.map": "/bookstore/static/js/main.3be0bedd.js.map"
   },
   "entrypoints": [
     "static/css/main.22e46ca3.css",
