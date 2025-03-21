@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Приложение на Github pages
+Тестовое задание "Книжный магазин"
+Посмотреть приложение можно по адресу: https://aleksandr-tokmashov.github.io/bookstore/#/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Инструкция по запуску
+Склонируйте репозиторий к себе на компьютер командой:
+### `git clone git@github.com:Aleksandr-Tokmashov/bookstore.git`
 
-## Available Scripts
+Установите зависимости:
+### `npm i`
 
-In the project directory, you can run:
+Запустите приложение на локальном сервере:
+### `npm run start`
 
-### `npm start`
+Перейдите по адресу [http://localhost:3000](http://localhost:3000) чтобы посмотреть приложение в браузере.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Навигация по сайту
+Маршрутизация реализована с помощью React Router
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Маршруты (относительно корневого url):
+- **/** — страница по заданиям 1 и 2. Содержит Заголовок страницы, корзину, карточки книг и кнопку для перехода к заданию 3. \
+  Страница реализована с помощью шаблонов внутри html, css стилей из файла index.css, а так же с помощью чистого JavaScript \
+  (с типизацией TS). Использование React обусловлено использованием маршрутизации для разъединения заданий 1-2 и 3.
+- **/bookstore-react** — страница по заданиям 3.1 и 3.3. Содержит каталог карточек, подгруженный с API. Были использованы React, Redux, \
+  Redux Toolkit
+- **/bookstore-react/cart** — страница по заданию 3.2. Содержит коризну карточек, добавленных из каталога. Были использованы React, Redux
 
-### `npm test`
+## Пояснения по заданиям
+### Задание 1
+Html разметка находится в public/index.html в тегах template. Стили в src/index.css. Рендер html реализован в src/pages/bookstore/bookstore.tsx (для роута) с помощью src/pages/bookstore/renderTemplate.ts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Задание 2
+**2.1** Находится в файле src/pages/bookstore/filterBooksByPrice.ts. Написан вызов функции для проверки работы с выводом в консоль.
+**2.2** Находится в файле src/pages/bookstore/timer.ts. Написан вызов функции для проверки работы с выводом в консоль.
+**2.3** Находится в файле src/pages/bookstore/basket.ts. Разметка корзины находится в public/index.html в теге template. Вызов JS кода из basket.ts происходит в компоненте страницы (уточнение: логика добавления книги находится именно в basket.ts, в bookstore.tsx происходит только отрисовка шаблона и вызов функции из basket.ts)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Задание 3
+**3.1** Находится в папке src/components/card 
+**3.2** Компонент корзины находится в папке src/pages/bookstoreReactCartPage. Добавление в корзину реализовано src/pages/bookstoreReactCartPage/bookStoreReactPage.tsx. Работа с данными осуществлена с помощью слайса src/services/cartSlice.ts
+**3.3** Компонент каталога находится в папке src/pages/bookstoreReactPage. Работа с данными и обработка запроса к API осуществлена с помощью слайса src/services/bookSlice.ts.
