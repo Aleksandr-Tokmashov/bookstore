@@ -1,0 +1,28 @@
+.header {
+    font-size: 2em;
+    font-weight: bold;
+    height: 50px;
+    width: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50px
+}
+
+.link {
+    padding: 0 10px;
+    margin: 0;
+    border: 7px solid rgb(0, 55, 255);
+    color: rgb(0, 55, 255);
+    background-color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.5em;
+        justify-content: center;
+        left: 0
+    }
+}

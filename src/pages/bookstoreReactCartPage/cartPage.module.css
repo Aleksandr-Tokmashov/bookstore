@@ -1,0 +1,14 @@
+.empty  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 3em;
+}
+
+.pageName {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px 0;
+}
