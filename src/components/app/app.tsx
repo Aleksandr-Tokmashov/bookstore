@@ -1,5 +1,4 @@
 import "../../index.css";
-//import styles from "./app.module.css";
 import { BookstorePage } from "../../pages/bookstore/bookstore";
 import { BookstoreReactPage } from "../../pages/bookstoreReact/bookStoreReactPage";
 import { CartPage } from "../../pages/bookstoreReactCartPage/cartPage";
