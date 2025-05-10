@@ -2,13 +2,19 @@
 
 ## Инструкция по запуску
 Склонируйте репозиторий к себе на компьютер командой:
-### `git clone git@github.com:Aleksandr-Tokmashov/bookstore.git`
+```
+git clone git@github.com:Aleksandr-Tokmashov/bookstore.git
+```
 
 Установите зависимости:
-### `npm i`
+```
+npm i
+```
 
 Запустите приложение на локальном сервере:
-### `npm run start`
+```
+npm run start
+```
 
 Перейдите по адресу [http://localhost:3000](http://localhost:3000) чтобы посмотреть приложение в браузере.
 
